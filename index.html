@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Ball Pizza Customer Survey</title>
+    <style>
+        h1{
+            color:darkred;
+            font-size:40px;
+
+        }
+        p{
+            font-size: 20px;
+           
+        }
+        p, label, #cust, .navb{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #otherp{
+            font-size:17px;
+        }
+        #leg{
+            border: 2px solid black;
+            background-color: rgb(201, 3, 3);
+            color:white;
+            height:25px;
+        }
+        #field1, #field2{
+            background-color:rgb(228, 217, 179);
+            width:500px;
+            text-align: justify;
+            border-radius: 5%;
+            height:auto;
+        }
+        #container{
+            border: 5px solid black;
+            width:1200px;
+            margin-left: 150px;
+        }
+        #nav{
+            width:1200px;
+            height:70px;
+            background-image: linear-gradient(black, red);
+            text-align:center; 
+        }
+        #s, #o, #h{
+            border: 2px solid black;
+            width:100px;
+        }
+        #Where{
+            margin-left:60px;  
+        }
+        #nam, #saddr, #cit, #sta, #zp, #phone, #emai, #Where, #fd, #dtv, #otype, #rt{
+            float:right;
+            width:250px;
+        }
+        #ht, #rtp{
+            float:right;
+        }
+        
+        #textarea{
+            width:490px;
+            height:157px;
+        }
+        #s, #o, #h{
+            float:right;
+            height:30px; 
+            width:250px;
+        }
+        #submit, #cancel{
+            margin-left: 600px; 
+        }
+        #nav .n{
+            display:flex;
+            text-align: center;
+            text-decoration: none;
+            color:white;
+        }
+        .navb{
+            text-decoration: none;
+            color:white;
+            margin-left:15px;
+            margin-right:15px;
+            font-size: 25px;    
+        }
+        .navb:hover{
+            background-color: black;
+        }
+        #head{
+            background-color: black;
+        }
+        #field1{
+            position: absolute;
+            margin-left:40px;
+        }
+        #field2{
+            position: relative;
+        }
+        #field2{
+            margin-left: 640px;
+        }
+        #cust{
+            margin-left: 30px;
+        }
+        #top{
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        #button1{
+            margin-left: 450px;
+            width:150px;
+            height:30px;
+            margin-bottom: 20px;
+        }
+        #button2{
+            margin-left:30px;
+            width:80px;
+            height:30px;
+        } 
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header id="head">
+        <img src="redballpizza.png">
+        </header>
+        <div id="nav">
+            <br>
+            <a href="n" class="navb">home</a>
+            <a href="n" class="navb">menu</a>
+            <a href="n" class="navb">directions</a>
+            <a href="n" class="navb">coupons</a>
+            <a href="n" class="navb">orders</a>
+            <a href="n" class="navb">catering</a>
+            <a href="n" class="navb">reviews</a> 
+        </div>
+        <h1 id="cust">Customer Survey</h1>
+        <p id="top">Thank you for taking our customer survey. Your response helps Red Ball Pizza maintain the tradition that has made us the top-rated pizzeria in the metro area. All participants are automatically entered into a monthly drawing to recieve a Red Ball Express PizzaFest containing two large pizzas, a 2-liter soda, and a side order of chicken wings.</p>
+        <p id="top">Check your e-mail inbox for contest results.</p>
+        <p id="top">Surveys are private and confidential. Red Ball Pizza will not share your contact information with third parties, ever.</p>
+        <p id="top">Required values are marked by an asterisk (*)</p>
+        <form>
+            <fieldset id="field1">
+                <legend id="leg">Customer Information</legend><br>
+                <label for="nam">Name*</label>
+                <input type="text" id="nam" name="name" placeholder="First and Last Name" required>
+                <br>
+                <br>
+                <label for="saddr">Street Address</label>
+                <input type="text" id="saddr" name="Strt Addr" placeholder="Enter Street Address">
+                <br>
+                <br>
+                <label for="cit">City</label>
+                <input type="text" id="cit" name="city" placeholder="Enter City">
+                <br>
+                <br>
+                <label for="sta">State</label>
+                <input type="text" id="sta" name="state" placeholder="Enter State">
+                <br>
+                <br>
+                <label for="zp">Zip/Postal Code</label>
+                <input type="text" id="zp" name="zippost" placeholder="Enter a Zip/Postal Code">
+                <br>
+                <br>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="telephone" placeholder="(123) 456-7890">
+                <br>
+                <br>
+                <label for="emai">E-mail*</label>
+                <input type="email" id="emai" name="e-mail" placeholder="AdrianD@west-mec.org" required>
+                <br>
+                <br>
+                <label for="Where">Where did you hear about us?<br>(select all that apply)</label>
+                <select name="Heard" id="Where" size="5" multiple>
+                    <option value="Internet">Internet</option>
+                    <option value="Magazine">Magazine</option>
+                    <option value="Newspaper">Newspaper</option>
+                    <option value="Word of Mouth">Word of Mouth</option>
+                    <option value="Other">Other</option>
+                </select>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <label for="fd">What's your favorite dish?</label>
+                <input type="text" id="fd" name="favdish" placeholder="Enter Favorite Dish">
+                <br>
+                <br>
+                <label for="ht">How many times do you dine out per month?</label>
+                <input type="number" id="ht" name="howtime" value="1" step="1" min="0" max="30">
+                <br>
+                <br>
+                <input type="checkbox" id="mailist" name="Add me to mail list">
+                <label for="mailist">Add me to your mailing list for great coupons and specials!</label>
+            </fieldset>
+            <fieldset id="field2">
+                <legend id="leg">Share Your Experience at Red Ball Pizza</legend>
+                <br>
+                <label for="dtv">Date of Visit</label>
+                <input type="date" id="dtv" name="datevisit">
+                <br>
+                <br>
+                <label for="otype">Order Type</label>
+                <input type="text" id="otype" name="ordertpe" list="Order Type" placeholder="Select an order type">
+                <datalist id="Order Type">
+                    <option value="Dine in">
+                    <option value="Carry out">
+                    <option value="Online">
+                    <option value="Phone call">
+                </datalist> 
+                <br>
+                <br>
+                <label for="ser">Was your service Friendly?</label>
+                <div id="s">
+                <label for="ser">Yes</label>
+                <input type="radio" id="ser" name="Service" placeholder="Yes">
+                <label for="ser">No</label>
+                <input type="radio" id="ser" name="Service" placeholder="No">
+                </div>
+                <br>
+                <br>
+                <label for="ord">Was your order correct?</label>
+                <div id="o">
+                <label for="ord">Yes</label>
+                <input type="radio" id="ord" name="Order" placeholder="Yes">
+                <label for="ord">No</label>
+                <input type="radio" id="ord" name="Order" placeholder="No">
+                </div>
+                <br>
+                <br>
+                <label for="ft">Was your food hot?</label>
+                <div id="h">
+                <label for="ft">Yes</label>
+                <input type="radio" id="ft" name="Hot" placeholder="Yes">
+                <label for="ft">No</label>
+                <input type="radio" id="ft" name="Hot" placeholder="No">
+                </div>
+                <br>
+                <br>
+                <br>
+                <label for="rt">Rate the Overall Servic<br>(0=poor;10=great)</label>
+                <p id="rtp">10</p>
+                <input type="range" id="rt" name="Rate range" value="5" step="1" min="0" max="10">
+                <p id="rtp">0</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <label for="textarea">Tell us more about your experience!</label>
+                <br>
+                <textarea id="textarea" name="box"></textarea>
+            </fieldset>
+            <br>
+            <input type="submit" id="button1" value="Submit My Survey" required></button>
+            <input type="reset" id="button2" value="Cancel"></button>
+        </form> 
+    </div>
+</body>
+</html>
